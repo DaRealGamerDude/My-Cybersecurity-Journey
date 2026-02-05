@@ -1,3 +1,5 @@
+# Writeups
+
 This directory contains polished writeups documenting hands-on cybersecurity investigations, labs, and CTF-style exercises.
 
 The focus of these writeups is not speed or flag collection, but:
