@@ -1,6 +1,6 @@
 # TryHackMe — First Shift CTF (My first ever CTF attempt)
 
-**Date Completed:**  
+**Date Completed:** February !st, 2026
 **Difficulty:** Medium  
 **Platform:** TryHackMe  
 **Focus Areas:** SOC Operations, Threat Intelligence, Malware Analysis  
