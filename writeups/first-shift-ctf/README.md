@@ -117,6 +117,6 @@ This CTF confirmed my interest in defensive security and incident response, whil
 
 ## References
 
-- TryHackMe — First Shift CTF  
+- TryHackMe — [First Shift CTF](https://tryhackme.com/room/first-shift-ctf)  
 - MITRE ATT&CK Framework  
 - Threat intelligence reports referenced within the room  
