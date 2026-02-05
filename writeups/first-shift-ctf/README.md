@@ -1,4 +1,4 @@
-# TryHackMe — First Shift CTF (First CTF Attempt)
+# TryHackMe — First Shift CTF (My first ever CTF attempt)
 
 **Date Completed:**  
 **Difficulty:** Medium  
