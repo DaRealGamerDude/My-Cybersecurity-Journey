@@ -1,4 +1,4 @@
-# TryHackMe — First Shift CTF (My first ever CTF attempt)
+<img width="2530" height="1471" alt="image" src="https://github.com/user-attachments/assets/1065fc79-9bc8-4fa9-800b-b2f759eeec7c" /># TryHackMe — First Shift CTF (My first ever CTF attempt)
 
 **Date Completed:** February 1st, 2026  
 **Difficulty:** Medium  
@@ -10,9 +10,11 @@
 
 This write-up documents my first attempt at a SOC-focused Capture The Flag (CTF) on TryHackMe. At the time, my cybersecurity experience was limited to foundational learning (networking, Linux, Windows security, and web fundamentals), and this CTF was an intentional step into unguided, real-world-style problem solving.
 
-I successfully investigated Tasks 3–5, which focused on alert triage, infrastructure-based threat intelligence, and malware identification, applying SOC-style reasoning rather than exploit-driven approaches. Tasks 6–8 were not attempted due to insufficient hands-on experience with tools such as SIEMs and packet analysis, which were identified as clear skill gaps.
+I successfully investigated Tasks 3–5, which focused on alert triage, infrastructure-based threat intelligence, and malware identification, applying SOC-style reasoning rather than exploit-driven approaches, thus securing myself 1140 points. Tasks 6–8 were not attempted due to insufficient hands-on experience with tools such as SIEMs and packet analysis, which were identified as clear skill gaps.
 
 This CTF served as a baseline assessment of my current capabilities and confirmed my interest in defensive security and incident response, while clearly highlighting the areas I need to strengthen before progressing further.
+<img width="1600" height="684" alt="image" src="https://github.com/user-attachments/assets/d6236c2d-7a4e-4de2-84e2-5c311379d45e" />
+
 
 ---
 
