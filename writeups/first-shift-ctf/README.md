@@ -2,7 +2,7 @@
 
 **Date Completed:** February 1st, 2026  
 **Difficulty:** Medium  
-**Platform:** TryHackMe  
+**Platform:** [TryHackMe](https://tryhackme.com/)  
 **Focus Areas:** SOC Operations, Threat Intelligence, Malware Analysis  
 
 
