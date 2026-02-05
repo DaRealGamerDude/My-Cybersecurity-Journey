@@ -1,5 +1,3 @@
-<img width="2530" height="1471" alt="image" src="https://github.com/user-attachments/assets/1065fc79-9bc8-4fa9-800b-b2f759eeec7c" /># TryHackMe — First Shift CTF (My first ever CTF attempt)
-
 **Date Completed:** February 1st, 2026  
 **Difficulty:** Medium  
 **Platform:** [TryHackMe](https://tryhackme.com/)  
