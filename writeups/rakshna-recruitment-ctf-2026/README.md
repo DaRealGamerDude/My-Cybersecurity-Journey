@@ -12,7 +12,7 @@
 
 This write-up documents my second-ever Capture The Flag (CTF) experience, completed as part of the Rakshna recruitment process.
 
-Unlike my first CTF (a SOC-focused, investigation-heavy challenge on TryHackMe), this CTF was broad and puzzle-driven, covering **forensics, cryptography, OSINT, and web security**. The shift in style forced me to move away from structured SOC workflows and instead rely on experimentation, pattern recognition, and tool exploration.
+Unlike my first CTF (a SOC-focused, investigation-heavy challenge on TryHackMe), this CTF was broad and puzzle-driven, covering **forensics, cryptography, OSINT, and web security**. The shift in style forced me to move away from structured SOC workflows and instead rely on experimentation, pattern recognition, and tool exploration. Like my first CTF, I did rely on ChatGPT for some tasks but that was more to guide me in a particular direction than to just CTRL + C and V the answers and thus lose a crucial learning opportunity from this CTF.
 
 Each task tested a different way of thinking:
 - **Forensics** rewarded attention to file structure and headers
@@ -92,7 +92,7 @@ An intercepted message was protected by multiple layers of encoding. The final l
 
 ### Approach & Analysis
 
-This task was the hardest for me due to minimal prior experience with cryptography.
+This task was the hardest for me due to minimal prior experience with cryptography and thus I used ChatGPT to help me with this one but instead of blindly copy pasting I instead asked it to provide me witht a step by step guide on how to deal with Cryptography problems, the things to check for, tools to use, etc.. and I think it ended up teaching me a lot more than if I just left it blank or blidnly copy pasted the answer from somewhere.
 
 What I identified early:
 - The string was clearly **Base64**
@@ -100,13 +100,15 @@ What I identified early:
 
 The challenge came after decoding:
 - The output did not resemble readable plaintext
-- Multiple transformations were attempted: UTF-8, XOR, hex conversions
+- Multiple transformations were attempted: UTF-8, XOR, hex conversions but to no avail as shown below
+<img width="1080" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/c80f6369-7ef2-4284-87e7-738420bc7c10" />
 
-Eventually, through experimentation:
+Eventually, through experimentation (image below):
 1. Base64 decoding revealed structured binary data
 2. Applying **Vigenère decoding** using the key `RAKSHNA`
 3. Further transformations unexpectedly revealed a readable string
 4. The final output resolved into the flag
+<img width="1080" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/cc060133-8376-4077-a2e5-1bf633c69fa1" />
 
 This solution path was not linear and involved significant trial-and-error, but it reinforced how layered encodings often hide simple results beneath complexity.
 
@@ -153,6 +155,8 @@ Steps taken:
 6. Discovered a **Pastebin link**
 7. Retrieved the flag from the paste content
 
+<img width="1080" height="1080" alt="Untitled design (1)" src="https://github.com/user-attachments/assets/a9f83c2e-ff4f-4585-ba08-5dd0fe58ef21" />
+
 ---
 
 ### Result
@@ -198,6 +202,8 @@ Steps taken:
 4. Identified all three flag fragments directly in the client-side code
 5. Reassembled them into a single flag
 
+<img width="830" height="1268" alt="image" src="https://github.com/user-attachments/assets/61ca8742-d6e6-455e-8cb5-2f12a3c2e3f1" />
+
 No authentication bypass or brute forcing was required — everything was already exposed.
 
 ---
@@ -225,6 +231,7 @@ No authentication bypass or brute forcing was required — everything was alread
 - Base64 & classical cipher decoding
 - Social media platforms
 - Pastebin
+- ChatGPT, specifically for assistance with the Cryptography task because I have no prior experience in it.
 
 ---
 
