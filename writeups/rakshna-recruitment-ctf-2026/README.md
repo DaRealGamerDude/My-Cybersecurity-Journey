@@ -65,8 +65,10 @@ Steps taken:
 
 5. Opened the recovered image normally
 
-Once opened, the image contained a plaintext message revealing the flag.
-`will add image once the ctf is over`
+Once opened, the image contained a plaintext message revealing the flag:
+
+![803fa689-b193-4664-9adf-43ace37d5492](https://github.com/user-attachments/assets/5f9e5378-ba59-4001-9504-7f04a9ea393a)
+
 
 ---
 
