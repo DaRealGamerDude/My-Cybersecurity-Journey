@@ -8,7 +8,7 @@
 
 ---
 
-## 🧠 Executive Summary
+## Executive Summary
 
 This write-up documents my second-ever Capture The Flag (CTF) experience, completed as part of the Rakshna recruitment process.
 
@@ -24,7 +24,7 @@ Overall, this CTF highlighted both my strengths (forensics intuition, web fundam
 
 ---
 
-## 🗂️ Challenge Breakdown
+## Challenge Breakdown
 
 The CTF consisted of four independent tasks:
 
@@ -37,7 +37,7 @@ The CTF consisted of four independent tasks:
 
 ---
 
-## 🔍 Task 1 — The Ghost in the Header (Forensics)
+## Task 1 — The Ghost in the Header (Forensics)
 
 ### Problem Statement
 A supposedly “sanitized” image file was intercepted. The file no longer opened in any image viewer, but we were told it *was* originally an image.
@@ -78,7 +78,7 @@ Understanding file formats at the byte level is far more powerful than relying o
 
 ---
 
-## 🔐 Task 2 — 3-STEP VERIFICATION (Cryptography)
+## Task 2 — 3-STEP VERIFICATION (Cryptography)
 
 ### Problem Statement
 An intercepted message was protected by multiple layers of encoding. The final layer was hinted to be a **Vigenère cipher**, using the society’s name as the key.
@@ -127,7 +127,7 @@ While frustrating, it was also the most educational task because it forced me to
 
 ---
 
-## 🌐 Task 3 — The Trail of Breadcrumbs (OSINT)
+## Task 3 — The Trail of Breadcrumbs (OSINT)
 
 ### Problem Statement
 A hint suggested that the society’s social media presence might contain clues.
@@ -168,7 +168,7 @@ I made the task harder by assuming complexity where none was required. Sometimes
 
 ---
 
-## 🌍 Task 4 — The Administrator’s Oversight (Web)
+## Task 4 — The Administrator’s Oversight (Web)
 
 ### Problem Statement
 A prototype login portal was provided. The challenge hinted that developers had left critical information exposed client-side.
@@ -204,16 +204,7 @@ No authentication bypass or brute forcing was required — everything was alread
 
 ---
 
-### Reflection
-
-This task reinforced a foundational web security principle:
-> If it’s client-side, it’s not secret.
-
-Past experience with web development made this task trivial, but it’s a reminder of how often real-world vulnerabilities stem from simple oversight rather than complex exploits.
-
----
-
-## 🧠 Overall Takeaways
+## Overall Takeaways
 
 - File format knowledge is essential for forensic analysis
 - Cryptography is a clear gap I need to strengthen
@@ -223,7 +214,7 @@ Past experience with web development made this task trivial, but it’s a remind
 
 ---
 
-## 🔧 Tools & Platforms Used
+## Tools & Platforms Used
 
 - Hex editors / CyberChef
 - Browser Developer Tools
@@ -242,7 +233,7 @@ Past experience with web development made this task trivial, but it’s a remind
 
 ---
 
-## 🔗 Closing Note
+## Closing Note
 
 This CTF was very different from my first SOC-focused challenge, but equally valuable.  
 It confirmed my interest in defensive security while showing me where my fundamentals still need work.
