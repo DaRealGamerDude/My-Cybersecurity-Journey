@@ -1,4 +1,4 @@
-# Rakshna Recruitment CTF 2026
+# [Rakshna Recruitment CTF 2026](https://www.rakshnamait.com/events)
 
 **Date Completed:** February 10, 2026  
 **Difficulty:** Beginner–Intermediate  
@@ -35,6 +35,8 @@ The CTF consisted of four independent tasks:
 | Task 3 | OSINT | Social media footprint analysis |
 | Task 4 | Web | Client-side source code inspection |
 
+<img width="1600" height="999" alt="image" src="https://github.com/user-attachments/assets/b6b92a22-f48b-4927-934f-9677ef41c998" />
+
 ---
 
 ## Task 1 — The Ghost in the Header (Forensics)
@@ -52,13 +54,15 @@ The provided file appeared as a meaningless blob of data at first glance. The ke
 
 Steps taken:
 1. Inspected the raw data using a hex viewer
+<img width="1600" height="1002" alt="image" src="https://github.com/user-attachments/assets/3d24a17b-a069-4f52-8fc4-6f432e0fb02a" />
 2. Looked for known **magic bytes / file signatures**
 3. Identified a valid PNG header (`89 50 4E 47`)
 4. Reconstructed the file by restoring its proper header and structure
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/fb45f087-dbd0-4e68-85cd-35495d7b3b66" />
 5. Opened the recovered image normally
 
 Once opened, the image contained a plaintext message revealing the flag.
-
+`will add image once the ctf is over`
 ---
 
 ### Result
