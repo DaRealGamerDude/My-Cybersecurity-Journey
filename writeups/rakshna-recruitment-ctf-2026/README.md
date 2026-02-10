@@ -54,15 +54,20 @@ The provided file appeared as a meaningless blob of data at first glance. The ke
 
 Steps taken:
 1. Inspected the raw data using a hex viewer
+
 <img width="1600" height="1002" alt="image" src="https://github.com/user-attachments/assets/3d24a17b-a069-4f52-8fc4-6f432e0fb02a" />
+
 2. Looked for known **magic bytes / file signatures**
 3. Identified a valid PNG header (`89 50 4E 47`)
 4. Reconstructed the file by restoring its proper header and structure
+
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/fb45f087-dbd0-4e68-85cd-35495d7b3b66" />
+
 5. Opened the recovered image normally
 
 Once opened, the image contained a plaintext message revealing the flag.
 `will add image once the ctf is over`
+
 ---
 
 ### Result
@@ -101,6 +106,7 @@ What I identified early:
 The challenge came after decoding:
 - The output did not resemble readable plaintext
 - Multiple transformations were attempted: UTF-8, XOR, hex conversions but to no avail as shown below
+
 <img width="1080" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/c80f6369-7ef2-4284-87e7-738420bc7c10" />
 
 Eventually, through experimentation (image below):
@@ -108,6 +114,7 @@ Eventually, through experimentation (image below):
 2. Applying **Vigenère decoding** using the key `RAKSHNA`
 3. Further transformations unexpectedly revealed a readable string
 4. The final output resolved into the flag
+
 <img width="1080" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/cc060133-8376-4077-a2e5-1bf633c69fa1" />
 
 This solution path was not linear and involved significant trial-and-error, but it reinforced how layered encodings often hide simple results beneath complexity.
