@@ -9,6 +9,10 @@ This repository documents my cybersecurity learning journey with a focus on defe
   Hands-on SOC-style investigation covering alert triage, infrastructure analysis, and malware context.  
   → [`writeups/first-shift-ctf`](writeups/first-shift-ctf)
 
+_ Rakshna Recruitment CTF 2026 — Multi-Domain Challenge (Second CTF)  
+  Multi-domain CTF covering forensics, cryptography, OSINT, and web security.  
+  → [`writeups/rakshna-recruitment-ctf-2026`](writeups/rakshna-recruitment-ctf-2026)
+
 ### 🧪 TryHackMe Learning
 - Modules & learning paths  
   → [`tryhackme/modules`](tryhackme/modules)
