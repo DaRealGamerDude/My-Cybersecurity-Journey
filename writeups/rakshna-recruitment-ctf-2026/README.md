@@ -74,7 +74,7 @@ Once opened, the image contained a plaintext message revealing the flag:
 
 ### Result
 **Flag:**  
-`RAKSHNA{I'll-reveal-the-flag-after-the-ctf-ends}`
+`RAKSHNA{h3xdump_h3r0_2026}`
 
 ---
 
