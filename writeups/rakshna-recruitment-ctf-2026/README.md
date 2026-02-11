@@ -125,7 +125,7 @@ This solution path was not linear and involved significant trial-and-error, but 
 
 ### Result
 **Flag:**  
-`RAKSHNA{I'll-reveal-the-flag-after-the-ctf-ends}`
+`RAKSHNA{crypt0_1s_th3_w4y_0nly}`
 
 ---
 
@@ -170,7 +170,7 @@ Steps taken:
 
 ### Result
 **Flag:**  
-`RAKSHNA{I'll-reveal-the-flag-after-the-ctf-ends}`
+`RAKSHNA{f0ll0w_th3_d1g1t4l_f00tpr1nt_b4ck_t0_m3}`
 
 ---
 
@@ -219,7 +219,7 @@ No authentication bypass or brute forcing was required — everything was alread
 
 ### Result
 **Flag:**  
-`RAKSHNA{I'll-reveal-the-flag-after-the-ctf-ends}`
+`RAKSHNA{alw4ys_ch3ck_th3_s0urc3_cod3}`
 
 ---
 
