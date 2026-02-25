@@ -13,7 +13,7 @@ This repository documents my cybersecurity learning journey with a focus on defe
   Multi-domain CTF covering forensics, cryptography, OSINT, and web security.  
   → [`writeups/rakshna-recruitment-ctf-2026`](writeups/rakshna-recruitment-ctf-2026)
 
-### 🧪 TryHackMe Learning
+### 🧪 TryHackMe Learning (Module writeups and recap)
 - Modules & learning paths  
   → [`tryhackme/modules`](tryhackme/modules)
 - Hands-on labs & exercises  
