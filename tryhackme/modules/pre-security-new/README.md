@@ -7,343 +7,358 @@
 
 ---
 
-## Executive Summary
+## 🧾 Executive Summary
 
-The Pre Security (New) path significantly expands on the Legacy version by integrating:
+The Pre Security (New) path expands upon the Legacy path by integrating computer fundamentals, cloud exposure, cryptography mechanics, software logic, and practical offensive and defensive exercises.
 
-- Computer architecture fundamentals  
-- Cloud & virtualisation exposure  
-- Programming basics (Python, JavaScript, SQL)  
-- Applied cryptography concepts  
-- Practical offensive tooling (Gobuster, Hydra)  
-- Structured defensive security mindset  
+While the Legacy version focused on understanding systems (networking, Linux, Windows, web protocols), the updated version transitions into:
 
-While the Legacy path focused on understanding how systems work, the updated version shifts toward understanding:
+- Applied security mindset (CIA triad as analytical framework)
+- Cryptography foundations (symmetric, asymmetric, HTTPS hybrid model)
+- Basic automation and scripting exposure
+- Offensive enumeration and password attack tooling
+- Defensive infrastructure mapping and layered security
 
-- How systems are attacked  
-- How authentication mechanisms fail  
-- How encryption protects data  
-- How infrastructure is defended  
-- How incidents are classified using the CIA Triad  
-
-This path bridges foundational IT literacy with early SOC / DFIR analytical thinking.
+This path marks the shift from “how systems work” to “how systems are attacked and protected.”
 
 ---
 
-## Module Overview
+## 📘 Module Overview
 
-This module teaches foundational cybersecurity from the ground up. It begins with networking and operating systems, expands into software and encoding concepts, and culminates in applied offensive and defensive exercises.
-
-It consists of multiple rooms organized into 7 modules:
+This learning path is divided into 7 structured sections:
 
 1. Introduction to Cyber Security  
 2. Network Fundamentals  
 3. How The Web Works  
-4. Computer Fundamentals  
-5. Operating Systems Basics  
-6. Software Basics  
-7. Attacks and Defenses  
+4. Computer Fundamentals *(New)*  
+5. Operating Systems Basics *(Re-structured)*  
+6. Software Basics *(New)*  
+7. Attacks and Defenses *(Major Upgrade)*  
+
+Each section contains multiple rooms building progressively toward a foundational security mindset.
 
 ---
 
-## Rooms in This Module
+## 🗂️ Rooms in This Module
 
 | Order | Room Name | Primary Focus | Status |
 |------|------------|--------------|--------|
 | 1 | Offensive Security Intro | Red Team Fundamentals | ✔ |
 | 2 | Defensive Security Intro | Blue Team Fundamentals | ✔ |
-| 3 | Careers in Cyber | Industry Roles | ✔ |
-| 4 | What is Networking? | Core Networking Concepts | ✔ |
-| 5 | Intro to LAN | Local Area Networks | ✔ |
-| 6 | OSI Model | Layered Network Model | ✔ |
+| 3 | Careers in Cyber | Industry Overview | ✔ |
+| 4 | What is Networking? | Network Basics | ✔ |
+| 5 | Intro to LAN | Local Networks | ✔ |
+| 6 | OSI Model | Layered Model | ✔ |
 | 7 | Packets & Frames | Data Transmission | ✔ |
-| 8 | Extending Your Network | NAT & Internet Connectivity | ✔ |
+| 8 | Extending Your Network | NAT & Internet | ✔ |
 | 9 | DNS in Detail | Domain Resolution | ✔ |
-| 10 | HTTP in Detail | Web Protocol Mechanics | ✔ |
+| 10 | HTTP in Detail | Web Protocol | ✔ |
 | 11 | How Websites Work | Web Architecture | ✔ |
-| 12 | Putting It All Together | Full Web Flow | ✔ |
-| 13 | Inside a Computer System | Hardware & Processing | ✔ |
-| 14 | Computer Types | System Categories | ✔ |
-| 15 | Client-Server Basics | Service Architecture | ✔ |
-| 16 | Virtualisation Basics | VM & Hypervisors | ✔ |
+| 12 | Putting it all together | Request Lifecycle | ✔ |
+| 13 | Inside a Computer System | Hardware Basics | ✔ |
+| 14 | Computer Types | System Classifications | ✔ |
+| 15 | Client-Server Basics | Infrastructure Model | ✔ |
+| 16 | Virtualisation Basics | Hypervisors & VMs | ✔ |
 | 17 | Cloud Computing Fundamentals | Cloud Models | ✔ |
 | 18 | Operating Systems: Introduction | OS Concepts | ✔ |
-| 19 | Windows Basics | Windows CLI & Structure | ✔ |
-| 20 | Linux CLI Basics | Linux Commands | ✔ |
-| 21 | Windows CLI Basics | Windows CLI | ✔ |
-| 22 | Operating System Security | OS-Level Protection | ✔ |
+| 19 | Windows Basics | Windows Overview | ✔ |
+| 20 | Linux CLI Basics | Linux Command Line | ✔ |
+| 21 | Windows CLI Basics | Windows Command Line | ✔ |
+| 22 | Operating System Security | OS Security Controls | ✔ |
 | 23 | Data Representation | Binary & Hex | ✔ |
 | 24 | Data Encoding | ASCII & Unicode | ✔ |
-| 25 | Python: Simple Demo | Programming Basics | ✔ |
-| 26 | JavaScript: Simple Demo | Input Validation | ✔ |
-| 27 | Database SQL Basics | Query Logic | ✔ |
-| 28 | The CIA Triad | Security Model | ✔ |
-| 29 | Cryptography Concepts | Encryption Fundamentals | ✔ |
-| 30 | Become a Hacker | Enumeration & Brute Force | ✔ |
-| 31 | Become a Defender | Infrastructure Protection | ✔ |
+| 25 | Python: Simple Demo | Programming Logic | ✔ |
+| 26 | JavaScript: Simple Demo | Input Handling | ✔ |
+| 27 | Database SQL Basics | Query Fundamentals | ✔ |
+| 28 | The CIA Triad | Security Pillars | ✔ |
+| 29 | Cryptography Concepts | Encryption Models | ✔ |
+| 30 | Become a Hacker | Offensive Basics | ✔ |
+| 31 | Become a Defender | Defensive Basics | ✔ |
 
 ---
 
-## Key Concepts Covered (Module-Level)
+# 🧠 Key Concepts Covered (Module-Level)
 
-- CIA Triad — Classification of security incidents  
-- Symmetric vs Asymmetric Encryption — Key distribution & HTTPS  
-- Enumeration & Dictionary Attacks — Authentication abuse  
-- Cloud & Virtualisation — Modern infrastructure exposure  
-- Data Representation & Encoding — Binary literacy for analysis  
-- Cross-platform CLI usage — Linux & Windows parity  
-- Prevention, Detection, Mitigation lifecycle  
-
----
-
-# Room Notes & Task Breakdown
+- Computer architecture & cloud fundamentals  
+- Cross-platform OS literacy  
+- Data representation & encoding  
+- Programming logic basics  
+- SQL querying fundamentals  
+- Cryptographic models  
+- Enumeration & password attacks  
+- Defensive infrastructure mapping  
+- CIA triad as analytical framework  
 
 ---
 
-## 🔹 Room: Cloud Computing Fundamentals
-
-**Room Objective:**  
-Understand cloud service models and deployment models.
-
-### Key Learning:
-
-- IaaS, PaaS, SaaS
-- Public vs Private vs Hybrid cloud
-- Shared responsibility model
-
-**Security Relevance:**
-
-- Misconfigured cloud storage risks  
-- IAM mismanagement  
-- Importance of centralized logging in cloud  
-
-**Upgrade from Legacy:**  
-Cloud concepts were absent in the Legacy path.
+# 🔍 Section-by-Section Breakdown
 
 ---
 
-## 🔹 Room: Data Representation
+# 🔹 Section 4 – Computer Fundamentals
 
-**Room Objective:**  
-Understand binary, hex, and data storage.
+### Rooms:
+- Inside a Computer System  
+- Computer Types  
+- Client-Server Basics  
+- Virtualisation Basics  
+- Cloud Computing Fundamentals  
 
-### Key Learning:
+## What This Section Introduced (New vs Legacy)
 
-- Binary to decimal conversion  
-- Hex grouping (4-bit mapping)  
-- Bytes = 8 bits  
+This section did **not exist in the Legacy path**.
 
-**Security Relevance:**
+It established infrastructure awareness before security analysis.
 
-- Packet analysis  
-- Hash comparisons  
-- Log-level interpretation  
+### Core Knowledge Gained
 
----
+- CPU, RAM, storage roles  
+- Client vs server responsibilities  
+- Hypervisors and virtual machines  
+- IaaS, PaaS, SaaS models  
+- Public, Private, Hybrid cloud  
 
-## 🔹 Room: Data Encoding
+### Security Relevance
 
-**Room Objective:**  
-Understand how characters are encoded.
+- Understanding virtual machine isolation  
+- Shared responsibility model in cloud  
+- Misconfiguration risks  
+- Cloud logging importance  
+- Server exposure awareness  
 
-### Key Learning:
-
-- ASCII  
-- Unicode  
-- UTF-8  
-
-**Security Relevance:**
-
-- Encoding bypass vulnerabilities  
-- Log corruption awareness  
-- Input sanitization importance  
+For SOC/DFIR:
+Cloud awareness is critical for modern investigations.
 
 ---
 
-## 🔹 Room: Cryptography Concepts
+# 🔹 Section 5 – Operating Systems Basics
 
-**Room Objective:**  
-Understand encryption fundamentals and HTTPS.
+### Rooms:
+- Operating Systems: Introduction  
+- Windows Basics  
+- Linux CLI Basics  
+- Windows CLI Basics  
+- Operating System Security  
 
-### Key Learning:
+## Upgrade vs Legacy
+
+Legacy covered Linux & Windows separately in depth.
+
+New path:
+- Consolidated fundamentals
+- Added CLI exposure for both OSs
+- Reinforced cross-platform literacy
+
+### Key Reinforced Areas
+
+- File systems  
+- Permissions  
+- Processes  
+- Services  
+- Network inspection  
+- Basic OS security controls  
+
+### Security Relevance
+
+- Process anomaly detection  
+- Identifying suspicious connections  
+- Log awareness  
+- Permission abuse recognition  
+- Service persistence detection  
+
+---
+
+# 🔹 Section 6 – Software Basics
+
+### Rooms:
+- Data Representation  
+- Data Encoding  
+- Python: Simple Demo  
+- JavaScript: Simple Demo  
+- Database SQL Basics  
+
+## Major Upgrade from Legacy
+
+Legacy barely covered programming logic.
+
+New path introduced:
+
+- Binary & hexadecimal understanding  
+- ASCII vs Unicode encoding  
+- Python control flow  
+- JavaScript input handling  
+- Basic SQL querying  
+
+### Security Relevance
+
+- Understanding hex dumps  
+- Encoding bypass risks  
+- Log data interpretation  
+- Input validation weaknesses  
+- SQL injection awareness  
+- Query logic parallels SIEM logic  
+
+This section strengthens analytical thinking for DFIR log review.
+
+---
+
+# 🔹 Section 7 – Attacks and Defenses
+
+### Rooms:
+- The CIA Triad  
+- Cryptography Concepts  
+- Become a Hacker  
+- Become a Defender  
+
+## Major Conceptual Shift
+
+This section transitions from theory → security mindset.
+
+---
+
+## CIA Triad
+
+- Confidentiality
+- Integrity
+- Availability
+
+Used as classification framework for incidents.
+
+SOC relevance:
+Every alert impacts one of these pillars.
+
+---
+
+## Cryptography Concepts
+
+Covered:
 
 - Plaintext vs Ciphertext  
-- Algorithm vs Key  
 - Symmetric encryption  
 - Asymmetric encryption  
 - Key distribution problem  
-- HTTPS hybrid encryption  
+- HTTPS hybrid model  
 
-**Important Notes:**
+Security relevance:
 
-Encryption Process:
-plaintext + algorithm + key → ciphertext
-
-HTTPS Flow:
-Asymmetric handshake → symmetric session key
-
-**Security Relevance:**
-
-- TLS inspection  
+- TLS understanding  
 - Certificate validation  
 - MITM awareness  
+- Key compromise implications  
 
 ---
 
-## 🔹 Room: Become a Hacker
+## Become a Hacker
 
-**Room Objective:**  
-Perform basic enumeration and password attacks.
+Hands-on exposure:
 
-### Task 1: Directory Enumeration
+- Manual endpoint discovery  
+- Gobuster directory enumeration  
+- Hydra dictionary attack  
+- HTTP form brute forcing  
+- Weak password exploitation  
 
-**Tool Used:** Gobuster
+### Tools Used
 
 ```bash
 gobuster dir --url http://target -w wordlist.txt
-````
-
-Purpose:
-
-* Discover hidden endpoints
-* Identify exposed authentication pages
-
-### Task 2: Dictionary Attack
-
-**Tool Used:** Hydra
-
-```bash
-hydra -l admin -P passlist.txt target http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect"
+hydra -l admin -P passlist.txt target http-post-form
 ```
 
-**Concepts Learned:**
+Key lessons:
 
-* Weak passwords remain common
-* Automation significantly increases attack speed
-* Authentication logic weaknesses can be chained
-
-**Security Relevance:**
-
-* Importance of rate limiting
-* Account lockout policies
-* Password complexity enforcement
+- Automation speed
+- Authentication weaknesses
+- Password hygiene importance
+- Status code interpretation (200 vs 404)
 
 ---
 
-## 🔹 Room: Become a Defender
+## Become a Defender
 
-**Room Objective:**
-Map infrastructure and apply layered defenses.
+Infrastructure mapping exercise:
 
-### Key Learning:
+Identified:
+- Employee devices
+- Web server
+- Mail server
+- Firewall
+- Internet boundary
 
-* Infrastructure visibility
-* Prevention
-* Detection
-* Mitigation
-* Analysis
-* Risk prioritization
+Applied:
+- Prevention
+- Detection
+- Mitigation
+- Analysis
+- Improvement
 
-Mapped components:
-
-* Employee Devices
-* Web Server
-* Mail Server
-* Firewall
-* Internet
-
-Applied controls:
-
-* Antivirus
-* Spam filtering
-* Firewall rules
-* Traffic monitoring
-
-**SOC Alignment:**
-
-This mirrors real-world SOC workflows and layered security models.
+This mirrors real SOC workflow.
 
 ---
 
-# Tools / Technologies Used in This Module
+# 🛠️ Tools / Technologies Used
 
-* Gobuster — Directory enumeration
-* Hydra — Dictionary attack automation
-* Linux CLI — System navigation & inspection
-* Windows CLI — System inspection
-* HTTPS — Secure communication protocol
-* Virtualisation — VM isolation
-* Cloud service models — Infrastructure abstraction
-
----
-
-# 📌 Commands, Syntax & Patterns to Remember
-
-## Cross-Platform Command Comparison
-
-| Function              | Linux            | Windows CMD / PowerShell |
-| --------------------- | ---------------- | ------------------------ |
-| Current directory     | `pwd`            | `cd`                     |
-| List files            | `ls`             | `dir`                    |
-| Hidden files          | `ls -la`         | `dir /a`                 |
-| Change directory      | `cd`             | `cd`                     |
-| Show file contents    | `cat file.txt`   | `type file.txt`          |
-| Current user          | `whoami`         | `whoami`                 |
-| Hostname              | `hostname`       | `hostname`               |
-| Network configuration | `ip a`           | `ipconfig /all`          |
-| Active connections    | `netstat -tulnp` | `netstat -ano`           |
-| Running processes     | `ps aux`         | `tasklist`               |
-| Kill process          | `kill PID`       | `taskkill /PID`          |
-| Clear screen          | `clear`          | `cls`                    |
+- Gobuster — Directory enumeration  
+- Hydra — Password dictionary attacks  
+- Linux CLI utilities  
+- Windows CMD utilities  
+- Basic Python scripting  
+- SQL query logic  
+- HTTPS certificate inspection  
 
 ---
 
-## Offensive Tooling
+# 📌 Cross-Platform Command Comparison
 
-```bash
-# Directory Enumeration
-gobuster dir --url http://target -w wordlist.txt
-
-# Dictionary Attack
-hydra -l username -P wordlist target http-post-form
-```
-
----
-
-# Concept Upgrade Comparison (Legacy → New)
-
-| Area                | Legacy          | New                                   |
-| ------------------- | --------------- | ------------------------------------- |
-| System Fundamentals | OS & Networking | + Computer Architecture               |
-| Cloud               | Not covered     | Cloud models & virtualisation         |
-| Programming         | Minimal         | Python, JS, SQL exposure              |
-| Cryptography        | Surface level   | Symmetric, Asymmetric, HTTPS          |
-| Offensive           | Intro theory    | Practical enumeration & brute force   |
-| Defensive           | Overview        | Structured prevention/detection model |
+| Function | Linux | Windows CMD / PowerShell |
+|----------|--------|--------------------------|
+| Show current directory | `pwd` | `cd` |
+| List files | `ls` | `dir` |
+| Show hidden files | `ls -la` | `dir /a` |
+| Change directory | `cd` | `cd` |
+| View file contents | `cat file.txt` | `type file.txt` |
+| Current user | `whoami` | `whoami` |
+| Hostname | `hostname` | `hostname` |
+| Network config | `ip a` | `ipconfig /all` |
+| Active connections | `netstat -tulnp` | `netstat -ano` |
+| Running processes | `ps aux` | `tasklist` |
+| Kill process | `kill PID` | `taskkill /PID` |
+| Manage services | `systemctl status` | `sc query` |
+| Clear screen | `clear` | `cls` |
 
 ---
 
-# Technical Takeaways
+# 📊 Upgrade from Legacy – Summary
 
-Pre Security (New) transitions learning from:
+| Area | Legacy | New Path Upgrade |
+|------|--------|-----------------|
+| System Basics | Networking + OS | Added computer architecture |
+| Programming | Minimal | Python, JS, SQL |
+| Crypto | Surface | Practical models |
+| Offensive | Conceptual | Tool-based exposure |
+| Defensive | Introductory | Layered defense model |
+| Cloud | Not covered | Virtualisation + cloud models |
 
-Understanding systems → Thinking like a security analyst.
-
-It builds:
-
-* Infrastructure awareness
-* Authentication attack recognition
-* Encryption mechanics clarity
-* Defensive layering mindset
-* Cross-platform operational literacy
-
-For SOC / DFIR progression, this module strengthens:
-
-* Incident classification (CIA model)
-* Log reasoning foundations
-* Attack chain awareness
-* Credential abuse detection
-* Cloud exposure awareness
 ---
 
-```
+# 🎯 Final Technical Takeaways
+
+Pre Security (New) establishes:
+
+- Infrastructure awareness
+- Cross-platform literacy
+- Basic scripting logic
+- Encoding clarity
+- Cryptographic fundamentals
+- Offensive enumeration exposure
+- Authentication attack understanding
+- Defensive layered thinking
+
+Most importantly, it builds the foundation for:
+
+- SOC analysis
+- Threat detection
+- Incident classification
+- Log reasoning
+- Blue Team progression
+- Future DFIR skill development
