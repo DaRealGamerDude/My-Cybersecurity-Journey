@@ -1,4 +1,4 @@
- # TryHackMe Module: Pre Security (Legacy)
+ # TryHackMe: Pre Security (Legacy)
 
 **Path:** Pre Security (Legacy)  
 **Module Type:** Theory + Hands-on Labs  
