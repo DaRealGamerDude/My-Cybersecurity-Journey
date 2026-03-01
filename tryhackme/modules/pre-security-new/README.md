@@ -7,7 +7,7 @@
 
 ---
 
-## 🧾 Executive Summary
+## Executive Summary
 
 The Pre Security (New) path expands upon the Legacy path by integrating computer fundamentals, cloud exposure, cryptography mechanics, software logic, and practical offensive and defensive exercises.
 
@@ -23,7 +23,7 @@ This path marks the shift from “how systems work” to “how systems are atta
 
 ---
 
-## 📘 Module Overview
+## Module Overview
 
 This learning path is divided into 7 structured sections:
 
@@ -35,11 +35,11 @@ This learning path is divided into 7 structured sections:
 6. Software Basics *(New)*  
 7. Attacks and Defenses *(Major Upgrade)*  
 
-Each section contains multiple rooms building progressively toward a foundational security mindset.
+Each section contains multiple rooms building progressively toward a foundational security mindset. This writeup covers all the new content that was added to this path.
 
 ---
 
-## 🗂️ Rooms in This Module
+## Rooms in This Module (that contained new stuff not previously covered in Pre Security (Legacy)
 
 | Order | Room Name | Primary Focus | Status |
 |------|------------|--------------|--------|
@@ -77,7 +77,7 @@ Each section contains multiple rooms building progressively toward a foundationa
 
 ---
 
-# 🧠 Key Concepts Covered (Module-Level)
+# Key Concepts Covered (Module-Level)
 
 - Computer architecture & cloud fundamentals  
 - Cross-platform OS literacy  
@@ -91,7 +91,7 @@ Each section contains multiple rooms building progressively toward a foundationa
 
 ---
 
-# 🔍 Section-by-Section Breakdown
+# Section-by-Section Breakdown
 
 ---
 
@@ -328,7 +328,7 @@ This mirrors real SOC workflow.
 
 ---
 
-# 📊 Upgrade from Legacy – Summary
+# Upgrade from Legacy – Summary
 
 | Area | Legacy | New Path Upgrade |
 |------|--------|-----------------|
@@ -341,7 +341,7 @@ This mirrors real SOC workflow.
 
 ---
 
-# 🎯 Final Technical Takeaways
+# Final Technical Takeaways
 
 Pre Security (New) establishes:
 
