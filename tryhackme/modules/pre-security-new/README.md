@@ -7,7 +7,7 @@
 
 ---
 
-## 🧾 Executive Summary
+## Executive Summary
 
 The Pre Security (New) path significantly expands on the Legacy version by integrating:
 
@@ -30,7 +30,7 @@ This path bridges foundational IT literacy with early SOC / DFIR analytical thin
 
 ---
 
-## 📘 Module Overview
+## Module Overview
 
 This module teaches foundational cybersecurity from the ground up. It begins with networking and operating systems, expands into software and encoding concepts, and culminates in applied offensive and defensive exercises.
 
@@ -46,7 +46,7 @@ It consists of multiple rooms organized into 7 modules:
 
 ---
 
-## 🗂️ Rooms in This Module
+## Rooms in This Module
 
 | Order | Room Name | Primary Focus | Status |
 |------|------------|--------------|--------|
@@ -84,7 +84,7 @@ It consists of multiple rooms organized into 7 modules:
 
 ---
 
-## 🧠 Key Concepts Covered (Module-Level)
+## Key Concepts Covered (Module-Level)
 
 - CIA Triad — Classification of security incidents  
 - Symmetric vs Asymmetric Encryption — Key distribution & HTTPS  
@@ -96,7 +96,7 @@ It consists of multiple rooms organized into 7 modules:
 
 ---
 
-# 🔍 Room Notes & Task Breakdown
+# Room Notes & Task Breakdown
 
 ---
 
@@ -265,7 +265,7 @@ This mirrors real-world SOC workflows and layered security models.
 
 ---
 
-# 🛠️ Tools / Technologies Used in This Module
+# Tools / Technologies Used in This Module
 
 * Gobuster — Directory enumeration
 * Hydra — Dictionary attack automation
@@ -310,7 +310,7 @@ hydra -l username -P wordlist target http-post-form
 
 ---
 
-# 🔄 Concept Upgrade Comparison (Legacy → New)
+# Concept Upgrade Comparison (Legacy → New)
 
 | Area                | Legacy          | New                                   |
 | ------------------- | --------------- | ------------------------------------- |
@@ -323,7 +323,7 @@ hydra -l username -P wordlist target http-post-form
 
 ---
 
-# 🎯 Technical Takeaways
+# Technical Takeaways
 
 Pre Security (New) transitions learning from:
 
@@ -344,7 +344,6 @@ For SOC / DFIR progression, this module strengthens:
 * Attack chain awareness
 * Credential abuse detection
 * Cloud exposure awareness
-
-This marks the formal shift from foundational IT knowledge to early-stage security operations thinking.
+---
 
 ```
