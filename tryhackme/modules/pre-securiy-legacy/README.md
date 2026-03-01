@@ -7,7 +7,7 @@
 
 ---
 
-## 🧾 Executive Summary
+## Executive Summary
 
 The **Pre Security (Legacy)** path establishes foundational knowledge required to understand modern cybersecurity operations. It provides structured exposure to five core domains:
 
@@ -23,7 +23,7 @@ This path builds technical literacy necessary for further progression into SOC o
 
 ---
 
-## 📘 Module Overview
+## Module Overview
 
 The Pre Security (Legacy) path is divided into five structured sections:
 
@@ -44,7 +44,7 @@ The primary goal of this module is to ensure:
 
 ---
 
-## 🗂️ Rooms in This Module
+## Rooms in This Module
 
 | Order | Room Name | Primary Focus | Status |
 |--------|------------|----------------|--------|
