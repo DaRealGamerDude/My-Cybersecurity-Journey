@@ -97,206 +97,427 @@ Each section contains multiple rooms building progressively toward a foundationa
 
 # 🔹 Section 4 – Computer Fundamentals
 
-### Rooms:
-- Inside a Computer System  
-- Computer Types  
-- Client-Server Basics  
-- Virtualisation Basics  
-- Cloud Computing Fundamentals  
+### Rooms Covered:
+- Inside a Computer System
+- Computer Types
+- Client-Server Basics
+- Virtualisation Basics
+- Cloud Computing Fundamentals
 
-## What This Section Introduced (New vs Legacy)
+---
 
-This section did **not exist in the Legacy path**.
+## Section Overview
 
-It established infrastructure awareness before security analysis.
+This section introduced foundational infrastructure knowledge that was not present in the Legacy path. Instead of jumping directly into operating systems, this module focused on how computers function internally and how modern infrastructure is structured.
 
-### Core Knowledge Gained
+---
 
-- CPU, RAM, storage roles  
-- Client vs server responsibilities  
-- Hypervisors and virtual machines  
-- IaaS, PaaS, SaaS models  
-- Public, Private, Hybrid cloud  
+## What I Learned from Each Room
 
-### Security Relevance
+### Inside a Computer System
 
-- Understanding virtual machine isolation  
-- Shared responsibility model in cloud  
-- Misconfiguration risks  
-- Cloud logging importance  
-- Server exposure awareness  
+**Focus:**
+- CPU, RAM, storage roles
+- Input/output devices
+- How data flows through hardware
 
-For SOC/DFIR:
-Cloud awareness is critical for modern investigations.
+**Key Learning:**
+- CPU executes instructions.
+- RAM stores temporary working data.
+- Storage retains persistent data.
+- Performance bottlenecks often stem from resource limitations.
+
+**Security Relevance:**
+Understanding system internals is critical when analyzing:
+- Memory-based malware
+- Disk artifacts in forensics
+- Resource exhaustion attacks
+
+---
+
+### Computer Types
+
+**Focus:**
+- Desktops, servers, embedded systems
+- Differences between personal and enterprise systems
+
+**Key Learning:**
+- Servers prioritize availability and reliability.
+- Embedded systems may lack security hardening.
+- Infrastructure diversity affects attack surface.
+
+**Security Relevance:**
+Different device classes require different security strategies.
+
+---
+
+### Client-Server Basics
+
+**Focus:**
+- Client requests
+- Server responses
+- Centralized service architecture
+
+**Key Learning:**
+- Servers host resources.
+- Clients consume services.
+- Authentication and authorization typically occur server-side.
+
+**Security Relevance:**
+Most attacks target the server side.
+Understanding this model helps in:
+- Log correlation
+- Identifying lateral movement
+- Authentication abuse detection
+
+---
+
+### Virtualisation Basics
+
+**Focus:**
+- Hypervisors
+- Virtual machines
+- Resource abstraction
+
+**Key Learning:**
+- Type 1 vs Type 2 hypervisors
+- Multiple VMs can run on one physical host
+- Isolation depends on hypervisor security
+
+**Security Relevance:**
+- VM escape risks
+- Snapshot misuse
+- Virtual network misconfiguration
+
+---
+
+### Cloud Computing Fundamentals
+
+**Focus:**
+- IaaS, PaaS, SaaS
+- Public vs Private vs Hybrid cloud
+
+**Key Learning:**
+- Shared responsibility model
+- Cloud misconfiguration is a major risk
+- Identity management is critical in cloud environments
+
+**Security Relevance:**
+Modern SOC & DFIR investigations often involve:
+- Cloud audit logs
+- Identity misuse
+- Misconfigured storage buckets
 
 ---
 
 # 🔹 Section 5 – Operating Systems Basics
 
-### Rooms:
-- Operating Systems: Introduction  
-- Windows Basics  
-- Linux CLI Basics  
-- Windows CLI Basics  
-- Operating System Security  
+### Rooms Covered:
+- Operating Systems: Introduction
+- Windows Basics
+- Linux CLI Basics
+- Windows CLI Basics
+- Operating System Security
 
-## Upgrade vs Legacy
+---
 
-Legacy covered Linux & Windows separately in depth.
+## Section Overview
 
-New path:
-- Consolidated fundamentals
-- Added CLI exposure for both OSs
-- Reinforced cross-platform literacy
+This section consolidated OS fundamentals from the Legacy path but reinforced command-line literacy and security mechanisms more explicitly.
 
-### Key Reinforced Areas
+---
 
-- File systems  
-- Permissions  
-- Processes  
-- Services  
-- Network inspection  
-- Basic OS security controls  
+## What I Learned from Each Room
 
-### Security Relevance
+### Operating Systems: Introduction
 
-- Process anomaly detection  
-- Identifying suspicious connections  
-- Log awareness  
-- Permission abuse recognition  
-- Service persistence detection  
+**Focus:**
+- Kernel vs user space
+- Process management
+- Memory handling
+
+**Key Learning:**
+- OS manages hardware resources.
+- Processes run in isolation.
+- Access control is enforced by OS permissions.
+
+**Security Relevance:**
+OS structure understanding is essential for:
+- Privilege escalation analysis
+- Process injection detection
+
+---
+
+### Windows Basics
+
+**Focus:**
+- File system (NTFS)
+- User accounts
+- System utilities
+
+**Key Learning:**
+- ACL-based permissions
+- User roles and privilege levels
+- Importance of Windows Event Logs
+
+**Security Relevance:**
+Enterprise environments heavily rely on Windows.
+Event logs are central to investigations.
+
+---
+
+### Linux CLI Basics
+
+**Focus:**
+- File navigation
+- Permissions
+- Process inspection
+
+**Key Learning:**
+- File permission model (rwx)
+- Ownership management
+- Process visibility using CLI
+
+**Security Relevance:**
+Linux servers dominate cloud infrastructure.
+CLI fluency is required for incident analysis.
+
+---
+
+### Windows CLI Basics
+
+**Focus:**
+- Command prompt usage
+- Network inspection
+- Process monitoring
+
+**Key Learning:**
+- `ipconfig`, `netstat`, `tasklist`
+- Identifying active connections
+- Understanding service states
+
+**Security Relevance:**
+Critical for:
+- Detecting beaconing
+- Identifying suspicious processes
+
+---
+
+### Operating System Security
+
+**Focus:**
+- Firewalls
+- Antivirus
+- OS hardening
+
+**Key Learning:**
+- Importance of patching
+- Host-based firewall controls
+- Built-in OS protections
+
+**Security Relevance:**
+Defense starts at endpoint level.
 
 ---
 
 # 🔹 Section 6 – Software Basics
 
-### Rooms:
-- Data Representation  
-- Data Encoding  
-- Python: Simple Demo  
-- JavaScript: Simple Demo  
-- Database SQL Basics  
+### Rooms Covered:
+- Data Representation
+- Data Encoding
+- Python: Simple Demo
+- JavaScript: Simple Demo
+- Database SQL Basics
 
-## Major Upgrade from Legacy
+---
 
-Legacy barely covered programming logic.
+## Section Overview
 
-New path introduced:
+This section introduced logical thinking and data-level awareness not deeply covered in Legacy.
 
-- Binary & hexadecimal understanding  
-- ASCII vs Unicode encoding  
-- Python control flow  
-- JavaScript input handling  
-- Basic SQL querying  
+---
 
-### Security Relevance
+## What I Learned from Each Room
 
-- Understanding hex dumps  
-- Encoding bypass risks  
-- Log data interpretation  
-- Input validation weaknesses  
-- SQL injection awareness  
-- Query logic parallels SIEM logic  
+### Data Representation
 
-This section strengthens analytical thinking for DFIR log review.
+**Focus:**
+- Binary
+- Hexadecimal
+- Bytes
+
+**Key Learning:**
+- 8 bits = 1 byte
+- Hex simplifies binary
+- Color encoding (RGB)
+
+**Security Relevance:**
+- Packet inspection
+- Hash comparison
+- Hex dump reading
+
+---
+
+### Data Encoding
+
+**Focus:**
+- ASCII
+- Unicode
+- UTF-8
+
+**Key Learning:**
+- Encoding defines character mapping
+- Unicode solves multi-language limitations
+
+**Security Relevance:**
+- Encoding bypass attacks
+- Log corruption detection
+
+---
+
+### Python: Simple Demo
+
+**Focus:**
+- Variables
+- Loops
+- Conditionals
+
+**Key Learning:**
+- Control flow logic
+- Input validation basics
+
+**Security Relevance:**
+Foundation for:
+- Log parsing
+- Automation scripts
+
+---
+
+### JavaScript: Simple Demo
+
+**Focus:**
+- Web input handling
+- Basic validation
+
+**Key Learning:**
+- Client-side validation is not secure
+- Regex filtering basics
+
+**Security Relevance:**
+Understanding:
+- Input manipulation
+- Web-based attack vectors
+
+---
+
+### Database SQL Basics
+
+**Focus:**
+- SELECT
+- WHERE
+- ORDER BY
+
+**Key Learning:**
+- Query filtering logic
+- Structured data retrieval
+
+**Security Relevance:**
+- SQL injection awareness
+- SIEM query logic parallels
 
 ---
 
 # 🔹 Section 7 – Attacks and Defenses
 
-### Rooms:
-- The CIA Triad  
-- Cryptography Concepts  
-- Become a Hacker  
-- Become a Defender  
-
-## Major Conceptual Shift
-
-This section transitions from theory → security mindset.
+### Rooms Covered:
+- The CIA Triad
+- Cryptography Concepts
+- Become a Hacker
+- Become a Defender
 
 ---
 
-## CIA Triad
+## Section Overview
 
+This section marked the transition from theory to applied security thinking.
+
+---
+
+## What I Learned from Each Room
+
+### The CIA Triad
+
+**Focus:**
 - Confidentiality
 - Integrity
 - Availability
 
-Used as classification framework for incidents.
+**Key Learning:**
+Every security incident impacts one of these pillars.
 
-SOC relevance:
-Every alert impacts one of these pillars.
-
----
-
-## Cryptography Concepts
-
-Covered:
-
-- Plaintext vs Ciphertext  
-- Symmetric encryption  
-- Asymmetric encryption  
-- Key distribution problem  
-- HTTPS hybrid model  
-
-Security relevance:
-
-- TLS understanding  
-- Certificate validation  
-- MITM awareness  
-- Key compromise implications  
+**Security Relevance:**
+Forms the foundation of incident classification.
 
 ---
 
-## Become a Hacker
+### Cryptography Concepts
 
-Hands-on exposure:
+**Focus:**
+- Symmetric encryption
+- Asymmetric encryption
+- HTTPS handshake
+- Key distribution problem
 
-- Manual endpoint discovery  
-- Gobuster directory enumeration  
-- Hydra dictionary attack  
-- HTTP form brute forcing  
-- Weak password exploitation  
+**Key Learning:**
+- Public vs private keys
+- Hybrid encryption model
+- Certificates and trust chains
 
-### Tools Used
+**Security Relevance:**
+- TLS inspection
+- Certificate validation
+- MITM awareness
 
+---
+
+### Become a Hacker
+
+**Focus:**
+- Enumeration
+- Directory discovery
+- Dictionary attacks
+
+**Tools Used:**
 ```bash
 gobuster dir --url http://target -w wordlist.txt
 hydra -l admin -P passlist.txt target http-post-form
 ```
 
-Key lessons:
-
-- Automation speed
-- Authentication weaknesses
-- Password hygiene importance
-- Status code interpretation (200 vs 404)
+**Key Learning:**
+- Automation speed advantage
+- Weak password risks
+- Endpoint exposure
 
 ---
 
-## Become a Defender
+### Become a Defender
 
-Infrastructure mapping exercise:
+**Focus:**
+- Infrastructure mapping
+- Prevention vs detection
+- Layered security
 
-Identified:
-- Employee devices
-- Web server
-- Mail server
-- Firewall
-- Internet boundary
+**Key Learning:**
+- Identify assets
+- Apply security controls
+- Monitor and respond
 
-Applied:
-- Prevention
-- Detection
-- Mitigation
-- Analysis
-- Improvement
-
-This mirrors real SOC workflow.
+**SOC Alignment:**
+Mirrors real-world blue team workflows.
 
 ---
 
-# 🛠️ Tools / Technologies Used
+# Tools / Technologies Used
 
 - Gobuster — Directory enumeration  
 - Hydra — Password dictionary attacks  
