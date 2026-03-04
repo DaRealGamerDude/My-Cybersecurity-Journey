@@ -523,4 +523,3 @@ wget URL
 Although the Linux Fundamentals module covers beginner material, it establishes the foundation required for many cybersecurity tasks. Understanding the Linux command line is essential for system administration, penetration testing, and defensive security operations.
 
 Revisiting this module reinforced how core Linux concepts such as file permissions, logs, processes, and automation directly relate to **security monitoring, incident response, and system investigation workflows**.
-```
