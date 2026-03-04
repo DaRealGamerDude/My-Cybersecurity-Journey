@@ -488,7 +488,7 @@ Trusts enable cross-domain resource access.
 
 ---
 
-## 🛠️ Tools / Technologies Used in This Module
+## Tools / Technologies Used in This Module
 
 - Windows OS
 - Active Directory Domain Services (AD DS)
