@@ -4,7 +4,6 @@
 **Module Type:** Mixed (Theory + Hands-on)  
 **Difficulty:** Beginner  
 **Status:** Completed  
-**Date Completed:** [Add Date]
 
 ---
 
