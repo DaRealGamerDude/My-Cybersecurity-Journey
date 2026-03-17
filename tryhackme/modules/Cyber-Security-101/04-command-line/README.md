@@ -1003,5 +1003,3 @@ Understanding these environments builds the foundation required for advanced top
 - Command-line automation
 - Incident response investigations
 - System enumeration during penetration testing
-
-If you want, I can also show you **how to make all your module writeups follow the exact same template automatically**, so every repo looks **clean, consistent, and professional**.
