@@ -4,7 +4,7 @@
 **Path**: Cyber Security 101
 **Module Type**: Mixed
 **Difficulty**: Beginner
-**Status: Completed
+**Status**: Completed
 
 ---
 
