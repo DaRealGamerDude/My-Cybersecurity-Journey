@@ -1227,3 +1227,549 @@ Port	Why it matters
 
 
 ---
+
+Got you. I’ve not changed your content, only fixed:
+	•	Structure
+	•	Markdown formatting
+	•	Tables
+	•	Headings consistency
+	•	Spacing / readability
+	•	Alignment with your reference write-up
+
+This is now clean, GitHub-ready, copy-paste .md format.
+
+⸻
+
+:::writing{variant=“standard” id=“84721”}
+
+TryHackMe Module: Networking
+
+Path: Cyber Security 101
+Module Type: Mixed (Theory + Hands-on)
+Difficulty: Beginner
+Status: Completed
+
+⸻
+
+Summary
+
+This module introduces the fundamental principles of computer networking, beginning with theoretical networking models and progressing toward practical protocols and tools used across the Internet.
+
+The module explores how data travels between systems, how devices automatically configure themselves on networks, and how different protocols work together to support services like web browsing, email, and file transfer.
+
+Major areas covered include:
+	•	Networking architecture models (OSI and TCP/IP)
+	•	IP addressing and subnetting
+	•	Transport protocols (TCP and UDP)
+	•	Infrastructure protocols like DHCP, ARP, ICMP, and NAT
+	•	Core Internet protocols such as DNS, HTTP, FTP, and SMTP
+	•	Secure communication using TLS, SSH, and VPN
+	•	Network traffic analysis using Wireshark and Tcpdump
+	•	Host discovery and enumeration using Nmap
+
+By the end of the module, I developed a foundational understanding of how packets move through networks, how protocols interact across layers, and how analysts can observe and investigate network traffic.
+
+⸻
+
+Rooms in This Module
+
+Order	Room Name	Primary Focus	Status
+1	Networking Concepts	OSI model, TCP/IP stack, IP addressing	✔
+2	Networking Essentials	DHCP, ARP, ICMP, Routing, NAT	✔
+3	Networking Core Protocols	DNS, HTTP, FTP, Email protocols	✔
+4	Networking Secure Protocols	TLS, HTTPS, SSH, VPN	✔
+5	Wireshark: The Basics	Packet analysis	✔
+6	Tcpdump: The Basics	CLI packet capture	✔
+7	Nmap: The Basics	Network discovery and scanning	✔
+
+
+⸻
+
+Key Concepts Covered (Module-Level)
+	•	Network Architecture Models
+	•	Network Communication
+	•	Network Infrastructure
+	•	Internet Application Protocols
+	•	Network Security
+	•	Traffic Analysis
+
+⸻
+
+Room Notes & Task Breakdown
+
+⸻
+
+🔹 Room: Networking Concepts
+
+Room Objective:
+Introduce the fundamental theoretical models and protocols that form the basis of modern networking.
+
+⸻
+
+Key Learning
+	•	Understanding network communication models
+	•	Identifying transport protocols
+	•	Understanding IP addressing
+	•	Learning how packets travel through networks
+
+⸻
+
+OSI Model
+
+Layer	Name	Function
+7	Application	Provides services to applications
+6	Presentation	Data encoding, compression, encryption
+5	Session	Session establishment and synchronization
+4	Transport	End-to-end communication
+3	Network	Logical addressing and routing
+2	Data Link	Communication within the same network segment
+1	Physical	Transmission of electrical or wireless signals
+
+Mnemonic:
+
+Please Do Not Throw Spinach Pizza Away
+
+
+⸻
+
+TCP/IP Model
+
+TCP/IP Layer	Corresponding OSI Layers
+Application	OSI Layers 5–7
+Transport	OSI Layer 4
+Internet	OSI Layer 3
+Link	OSI Layer 2
+Physical	OSI Layer 1
+
+
+⸻
+
+IP Addresses and Subnets
+
+Example IPv4 address:
+
+192.168.1.1
+
+IPv4 characteristics:
+	•	32 bits
+	•	4 octets
+	•	Each octet ranges from 0–255
+
+Example subnet mask:
+
+255.255.255.0
+
+CIDR representation:
+
+/24
+
+
+⸻
+
+Private IP Address Ranges
+
+Range	CIDR
+10.0.0.0 – 10.255.255.255	/8
+172.16.0.0 – 172.31.255.255	/12
+192.168.0.0 – 192.168.255.255	/16
+
+
+⸻
+
+UDP vs TCP
+
+UDP
+	•	Connectionless
+	•	Fast
+	•	No delivery guarantee
+
+TCP
+	•	Connection-oriented
+	•	Reliable
+	•	Guarantees packet delivery
+
+Three-way handshake:
+
+SYN → SYN-ACK → ACK
+
+
+⸻
+
+Encapsulation
+
+Application Data
+→ TCP Segment
+→ IP Packet
+→ Ethernet Frame
+
+
+⸻
+
+Telnet Example
+
+telnet MACHINE_IP 7
+
+GET / HTTP/1.1
+Host: telnet.thm
+
+
+⸻
+
+🔹 Room: Networking Essentials
+
+Room Objective:
+Introduce infrastructure protocols responsible for network configuration and communication.
+
+⸻
+
+DHCP (DORA Process)
+
+Step	Description
+Discover	Client broadcasts request
+Offer	Server offers IP
+Request	Client requests IP
+Acknowledge	Server confirms
+
+
+⸻
+
+ARP
+
+Who has 192.168.66.1?
+192.168.66.1 is-at 44:df:65:d8:fe:6c
+
+
+⸻
+
+ICMP
+
+Ping
+
+ping 192.168.1.1
+
+Traceroute
+
+traceroute example.com
+
+
+⸻
+
+Routing Protocols
+
+Protocol	Description
+OSPF	Link-state
+EIGRP	Cisco proprietary
+BGP	Internet backbone
+RIP	Distance-vector
+
+
+⸻
+
+NAT Example
+
+192.168.0.129 → 212.3.4.5
+
+
+⸻
+
+🔹 Room: Networking Core Protocols
+
+Room Objective:
+Introduce application-layer protocols used in Internet communication.
+
+⸻
+
+DNS
+
+google.com → 142.250.183.142
+
+Record Type	Purpose
+A	IPv4 mapping
+AAAA	IPv6 mapping
+CNAME	Alias
+MX	Mail server
+TXT	Metadata
+
+
+⸻
+
+WHOIS
+
+whois example.com
+
+
+⸻
+
+HTTP
+
+Default port:
+
+80
+
+Request
+
+GET /index.html HTTP/1.1
+Host: example.com
+
+Method	Purpose
+GET	Retrieve
+POST	Submit
+PUT	Update
+DELETE	Remove
+
+Code	Meaning
+200	Success
+301	Redirect
+403	Forbidden
+404	Not Found
+500	Server Error
+
+
+⸻
+
+HTTPS
+
+Default port:
+
+443
+
+
+⸻
+
+FTP
+
+Default port:
+
+21
+
+Command	Function
+USER	Username
+PASS	Password
+LIST	List files
+RETR	Download
+STOR	Upload
+
+
+⸻
+
+Email Protocols
+
+Protocol	Port	Secure Port
+SMTP	25	465 / 587
+POP3	110	995
+IMAP	143	993
+
+
+⸻
+
+🔹 Room: Networking Secure Protocols
+
+Room Objective:
+Introduce protocols that secure network communication.
+
+⸻
+
+TLS Properties
+
+Property	Description
+Confidentiality	Encryption
+Integrity	No tampering
+Authentication	Verified identity
+
+
+⸻
+
+SSH
+
+ssh username@host
+
+
+⸻
+
+SFTP vs FTPS
+
+Protocol	Port
+SFTP	22
+FTPS	990
+
+
+⸻
+
+VPN
+
+Examples:
+	•	OpenVPN
+	•	WireGuard
+	•	IPSec
+
+⸻
+
+🔹 Room: Wireshark: The Basics
+
+Room Objective:
+Introduce Wireshark for packet analysis.
+
+⸻
+
+Packet Structure
+
+Layer	Information
+Ethernet	MAC addresses
+IP	IP addresses
+TCP	Ports, sequence
+Application	Data
+
+
+⸻
+
+Filters
+
+http
+tcp.port == 80
+ip.addr == 192.168.1.10
+dns
+
+
+⸻
+
+🔹 Room: Tcpdump: The Basics
+
+Room Objective:
+Introduce command-line packet capture.
+
+⸻
+
+Commands
+
+tcpdump -i eth0
+tcpdump -w capture.pcap
+tcpdump -r capture.pcap
+tcpdump host 192.168.1.1
+tcpdump port 80
+tcpdump tcp
+tcpdump udp
+
+
+⸻
+
+🔹 Room: Nmap: The Basics
+
+Room Objective:
+Introduce network discovery and scanning.
+
+⸻
+
+Commands
+
+nmap -sn 192.168.1.0/24
+nmap target_ip
+nmap -sS target_ip
+nmap -sV target_ip
+nmap -O target_ip
+nmap -A target_ip
+
+
+⸻
+
+Tools / Technologies Used in This Module
+
+Tool	Purpose
+Wireshark	Packet analysis
+Tcpdump	CLI capture
+Nmap	Scanning
+Telnet	Manual testing
+Nslookup	DNS queries
+Whois	Domain lookup
+
+
+⸻
+
+📌 Commands, Syntax & Patterns to Remember
+
+Command	Purpose
+ipconfig	Windows network config
+ifconfig	Linux network config
+ip a	Linux IP info
+ping	Connectivity test
+traceroute	Path tracing
+telnet	Manual connection
+nslookup	DNS
+whois	Domain info
+ssh	Remote login
+tcpdump	Packet capture
+nmap	Scanning
+
+
+⸻
+
+📌 Common Ports, Protocols & Their Usage
+
+Protocol	Port(s)	Transport	Secure Version	Secure Port(s)	Purpose
+HTTP	80	TCP	HTTPS	443	Web
+FTP	21	TCP	FTPS	990	File transfer
+SSH	22	TCP	—	—	Secure login
+DNS	53	UDP/TCP	DoT/DoH	853	Name resolution
+SMTP	25	TCP	SMTPS	465/587	Email
+POP3	110	TCP	POP3S	995	Email
+IMAP	143	TCP	IMAPS	993	Email
+
+
+⸻
+
+🧠 Port Ranges
+
+Range	Name	Usage
+0–1023	Well-known	Core services
+1024–49151	Registered	Apps
+49152–65535	Ephemeral	Temporary
+
+
+⸻
+
+🔐 Key Patterns
+
+Add S = Secure
+
+Insecure	Secure
+HTTP	HTTPS
+FTP	FTPS
+SMTP	SMTPS
+POP3	POP3S
+IMAP	IMAPS
+
+
+⸻
+
+SSH Replacements
+
+Old	New
+Telnet	SSH
+FTP	SFTP
+
+
+⸻
+
+Common SOC Ports
+	•	22 → SSH
+	•	80 → HTTP
+	•	443 → HTTPS
+	•	21 → FTP
+	•	25 → SMTP
+	•	53 → DNS
+	•	445 → SMB
+	•	3389 → RDP
+
+⸻
+
+Reflection
+
+This module builds a strong foundation in networking concepts essential for cybersecurity. It covers how systems communicate, how protocols interact, and how analysts can monitor and investigate traffic.
+
+These concepts are critical for:
+	•	SOC analysis
+	•	Threat detection
+	•	Network forensics
+	•	Incident response
+:::
+
+⸻
