@@ -1786,7 +1786,6 @@ You can **copy-paste this directly into GitHub**.
 
 ---
 
-```md
 # TryHackMe Module: Networking
 
 **Path:** Cyber Security 101  
