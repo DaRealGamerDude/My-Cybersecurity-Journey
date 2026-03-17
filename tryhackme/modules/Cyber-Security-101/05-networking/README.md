@@ -1,10 +1,10 @@
 
 # TryHackMe Module: Networking
 
-Path: Cyber Security 101
-Module Type: Mixed
-Difficulty: Beginner
-Status: Completed
+**Path**: Cyber Security 101
+**Module Type**: Mixed
+**Difficulty**: Beginner
+**Status: Completed
 
 ---
 
