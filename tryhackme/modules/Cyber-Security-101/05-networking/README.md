@@ -363,27 +363,7 @@ The router maintains a translation table mapping internal connections to externa
 
 This technique significantly reduces public IPv4 address usage.
 
-⸻
-
-If you want, I’ll immediately send Part 2 next, which covers:
-	•	Networking Core Protocols
-	•	Networking Secure Protocols
-	•	Wireshark
-	•	Tcpdump
-	•	Nmap
-
-and then finish with a large Linux vs Windows command comparison table so the documentation stays consistent with your repo style.
-Good. We continue exactly where Part 1 ended, without repeating headers and without breaking your structure. Same template, same depth, no shortcuts.
-
-Below is PART 2 (continuation) covering:
-	•	Networking Core Protocols
-	•	Networking Secure Protocols
-
-Part 3 will contain Wireshark, Tcpdump, Nmap, tools, and the full command comparison tables.
-
-Everything remains copy-paste GitHub Markdown.
-
-⸻
+---
 
 🔹 Room: Networking Core Protocols
 
@@ -843,24 +823,7 @@ VPNs are widely used for:
 	•	secure enterprise connectivity
 	•	bypassing geographic restrictions
 
-⸻
-
-Next we finish Part 3, which will include:
-	•	Wireshark
-	•	Tcpdump
-	•	Nmap
-	•	Tools section
-	•	Large Linux vs Windows command comparison table
-	•	All commands used across the entire module
-
-That final section will make the write-up perfect for revision, exactly like you want for your repo.
-Good constraint. A single consolidated command table is actually much better for revision than OS-split tables. When you revisit the module months later, you want a quick protocol → command → purpose memory jogger, not platform fragmentation.
-
-Below is PART 3 (final continuation) following the same structure and finishing the module cleanly.
-
-Everything remains GitHub-ready Markdown.
-
-⸻
+---
 
 🔹 Room: Wireshark: The Basics
 
@@ -977,7 +940,7 @@ tcpdump -i eth0
 
 This command captures packets on the eth0 network interface.
 
-⸻
+---
 
 Task: Saving Packet Captures
 
@@ -989,7 +952,7 @@ tcpdump -w capture.pcap
 
 This saves traffic into a PCAP file, which can then be opened in Wireshark.
 
-⸻
+---
 
 Task: Reading Packet Captures
 
@@ -999,7 +962,7 @@ tcpdump -r capture.pcap
 
 This allows quick inspection of recorded traffic without opening graphical tools.
 
-⸻
+---
 
 Task: Filtering Traffic
 
@@ -1016,7 +979,7 @@ tcpdump udp
 
 Filtering reduces noise and allows analysts to focus on specific communications.
 
-⸻
+---
 
 Security Relevance
 
@@ -1028,7 +991,7 @@ Tcpdump is frequently used in:
 
 Because it works via CLI, it is ideal for remote servers and production environments.
 
-⸻
+---
 
 🔹 Room: Nmap: The Basics
 
@@ -1043,7 +1006,7 @@ Nmap is widely used by:
 
 Its primary purpose is to identify active hosts, open ports, and running services on a network.
 
-⸻
+---
 
 Task: Host Discovery
 
@@ -1055,7 +1018,7 @@ nmap -sn 192.168.1.0/24
 
 This performs a ping scan, identifying which hosts are alive.
 
-⸻
+---
 
 Task: Port Scanning
 
@@ -1067,7 +1030,7 @@ nmap target_ip
 
 Nmap checks common ports to determine which services are available.
 
-⸻
+---
 
 Task: SYN Scan
 
@@ -1081,7 +1044,7 @@ This scan sends TCP SYN packets to determine open ports.
 
 It is often referred to as a stealth scan because connections are not fully established.
 
-⸻
+---
 
 Task: Service Detection
 
@@ -1093,7 +1056,7 @@ nmap -sV target_ip
 
 This attempts to determine the software and version running on each open port.
 
-⸻
+---
 
 Task: OS Detection
 
@@ -1105,7 +1068,7 @@ nmap -O target_ip
 
 It analyzes TCP/IP stack behavior to make educated guesses about the OS.
 
-⸻
+---
 
 Task: Aggressive Scan
 
@@ -1119,7 +1082,7 @@ This enables:
 	•	script scanning
 	•	traceroute
 
-⸻
+---
 
 Security Relevance
 
@@ -1131,7 +1094,7 @@ Nmap is frequently used in:
 
 Attackers also use Nmap to identify potential attack surfaces, which is why defenders must understand how it works.
 
-⸻
+---
 
 🛠️ Tools / Technologies Used in This Module
 
@@ -1144,7 +1107,7 @@ Nslookup	DNS query tool
 Whois	Domain registration lookup
 
 
-⸻
+---
 
 📌 Commands, Syntax & Patterns to Remember
 
@@ -1173,34 +1136,9 @@ nmap <target>	Perform basic port scan
 nmap -sS <target>	Perform TCP SYN scan
 nmap -sV <target>	Detect services and versions
 nmap -O <target>	Attempt operating system detection
-nmap -A <target>	Perform aggressive scan with multiple detection techniques
+nmap -A <target>	Perform aggressive scan with multiple detection 
 
-
-⸻
-
-This completes the Networking module documentation.
-
-Your repository now has a clean progression of knowledge:
-	1.	Pre Security (Legacy + New) — foundational computing and networking
-	2.	Cyber Security 101 Networking — deeper understanding of protocols and analysis tools
-
-Which sets you up perfectly for the next modules where traffic analysis and logging become critical for SOC workflows.
-
-⸻
-
-If you want, I can also show you one upgrade that would make your entire repo look significantly more professional to recruiters — a standardized “Security Relevance / Blue Team Insight” section at the end of each room explaining why defenders care about that concept. That aligns extremely well with your SOC / DFIR trajectory and makes your write-ups look like analyst notes rather than st.
-Good catch — this is actually one of the most useful revision tables for networking + SOC work. You will come back to ports again and again (logs, alerts, Nmap scans, PCAPs, etc.), so having this centralized is the right move.
-
-I’ll add a clean, comprehensive port reference table that includes:
-	•	Protocol
-	•	Default Port(s)
-	•	Secure vs Insecure
-	•	Transport Protocol
-	•	Use case / notes
-
-This is copy-paste ready — just append it at the end of your README.
-
-⸻
+---
 
 📌 Common Ports, Protocols & Their Usage
 
@@ -1233,20 +1171,18 @@ SIP	5060	UDP/TCP	SIPS	5061	VoIP signaling
 MQTT	1883	TCP	MQTTS	8883	IoT messaging protocol
 ICMP	N/A	IP	—	—	Used for ping/traceroute (no ports)
 
+---
 
-⸻
-
-🧠 Port Ranges (Important for Exams + Real-World)
+🧠 Port Ranges
 
 Range	Name	Usage
 0–1023	Well-known ports	Standard services (HTTP, SSH, etc.)
 1024–49151	Registered ports	Applications/services
 49152–65535	Ephemeral ports	Temporary client-side ports
 
+---
 
-⸻
-
-🔐 Key Patterns to Remember (VERY Important)
+🔐 Key Patterns 
 
 1. “Add S = Secure”
 
@@ -1258,8 +1194,6 @@ POP3 (110)	POP3S (995)
 IMAP (143)	IMAPS (993)
 
 
-⸻
-
 2. SSH Replacements
 
 Old (Insecure)	New (Secure)
@@ -1267,11 +1201,8 @@ Telnet (23)	SSH (22)
 FTP (21)	SFTP (22)
 
 
-⸻
+3. Ports Commonly Seen In CTFs / SOC Logs:
 
-3. Ports You WILL See in CTFs / SOC Logs
-
-If you remember nothing else, remember these:
 	•	22 → SSH
 	•	80 → HTTP
 	•	443 → HTTPS
@@ -1282,9 +1213,6 @@ If you remember nothing else, remember these:
 	•	445 → SMB
 	•	3389 → RDP
 
-⸻
-
-🛡️ Blue Team / SOC Insight (Important for your career path)
 
 These ports are high-signal in investigations:
 
@@ -1298,17 +1226,4 @@ Port	Why it matters
 25	Phishing / spam infrastructure
 
 
-⸻
-
-⚠️ Real-World Notes
-	•	Open ports = attack surface
-	•	Unused open ports = misconfiguration
-	•	Non-standard ports (e.g. 8080, 4444) often = suspicious services
-	•	Encrypted traffic (443) ≠ safe → attackers hide inside HTTPS
-
-⸻
-
-This table + your write-up = solid revision + interview-ready knowledge base.
-
-If you want next level upgrade (and this will genuinely set you apart):
-I can add a “How this appears in logs / Nmap / Wireshark” section per protocol, which directly maps your learning to SOC analyst workflows.
+---
