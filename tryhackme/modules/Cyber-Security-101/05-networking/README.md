@@ -1,12 +1,12 @@
 
-TryHackMe Module: Networking
+# TryHackMe Module: Networking
 
 Path: Cyber Security 101
 Module Type: Mixed
 Difficulty: Beginner
 Status: Completed
 
-⸻
+---
 
 📘 Module Overview
 
@@ -26,7 +26,7 @@ Major areas covered include:
 
 By the end of the module, I developed a foundational understanding of how packets move through networks, how protocols interact across layers, and how analysts can observe and investigate network traffic.
 
-⸻
+---
 
 🗂️ Rooms in This Module
 
@@ -130,7 +130,7 @@ Physical	OSI Layer 1
 
 This model represents the actual architecture used on the Internet.
 
-⸻
+---
 
 Task 4: IP Addresses and Subnets
 
