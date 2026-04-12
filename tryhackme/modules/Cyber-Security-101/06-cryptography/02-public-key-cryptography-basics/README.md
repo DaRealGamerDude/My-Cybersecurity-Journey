@@ -9,43 +9,44 @@
 
 # Summary
 
-This room introduces public key (asymmetric) cryptography and its role in securing modern digital communication. It explains how asymmetric systems solve key distribution problems, and how they enable authentication, integrity, and confidentiality.
+This room builds upon basic cryptography concepts and focuses on **asymmetric (public key) cryptography**. It explains how public/private key pairs are used to enable secure communication, authentication, and integrity over insecure networks.
 
-Core concepts include RSA, Diffie-Hellman key exchange, SSH key authentication, digital signatures, certificates, and PGP/GPG encryption.
+Core topics include RSA, Diffie-Hellman key exchange, SSH authentication, digital signatures, certificates, and PGP/GPG.
 
-These concepts are critical in real-world cybersecurity, especially in areas such as secure communications, authentication systems, and network security protocols.
+These concepts are critical in real-world cybersecurity, especially in **secure communication protocols, authentication systems, and SOC investigations involving encrypted traffic and certificates**.
 
 ---
 
 # Key Concepts Covered
 
 - Authentication, Integrity, Confidentiality, Authenticity
-- Asymmetric encryption (public/private key model)
-- RSA algorithm
+- Asymmetric encryption (public/private keys)
+- RSA algorithm fundamentals
 - Diffie-Hellman key exchange
 - SSH key-based authentication
 - Digital signatures
-- Certificates and Certificate Authorities (CAs)
+- Certificates and trust chains
 - PGP / GPG encryption
-- Cryptanalysis, brute-force, dictionary attacks
 
 ---
 
-# Room Notes & Task Breakdown
+# Task Breakdown & Notes
 
 ---
 
 ## Task 1: Introduction
 
 **Objective:**  
-Understand how cryptography ensures secure communication in real-world scenarios.
+Understand how cryptography ensures secure communication through authentication, integrity, confidentiality, and authenticity.
 
-Core security properties:
+---
+
+### Key Security Properties
 
 - **Authentication** → Verifying identity  
-- **Authenticity** → Message comes from claimed sender  
-- **Integrity** → Data is not altered  
-- **Confidentiality** → Data is not exposed  
+- **Authenticity** → Message comes from claimed source  
+- **Integrity** → Data not altered  
+- **Confidentiality** → Data hidden from unauthorized parties  
 
 ---
 
@@ -60,25 +61,26 @@ No answer needed
 
 ## Task 2: Common Use of Asymmetric Encryption
 
-Asymmetric encryption is primarily used to **securely exchange symmetric keys**, since symmetric encryption is faster for actual communication.
+Asymmetric encryption is primarily used to:
+- **Securely exchange symmetric keys**
+- Enable **authentication and verification**
 
 ---
 
 ### Analogy Mapping
 
-| Analogy | Cryptographic Meaning |
-|--------|----------------------|
-| Secret Code | Symmetric key + cipher |
+| Analogy | Cryptographic Equivalent |
+|--------|--------------------------|
+| Secret Code | Symmetric key |
 | Lock | Public key |
-| Key | Private key |
+| Lock’s Key | Private key |
 
 ---
 
 ### Key Insight
 
-- Public key → shared openly  
-- Private key → kept secret  
-- Used once → then switch to symmetric encryption  
+- Asymmetric encryption is slow → used for **key exchange**
+- Symmetric encryption is fast → used for **actual communication**
 
 ---
 
@@ -90,24 +92,27 @@ In the analogy presented, what real object is analogous to the public key?
 
 Lock
 
+**Explanation:**  
+The lock represents the public key since anyone can use it to encrypt data, but only the private key holder can unlock it.
+
 ---
 
 ## Task 3: RSA
 
-RSA is a public-key encryption algorithm based on the difficulty of factoring large numbers.
+RSA is a public-key cryptosystem based on the difficulty of factoring large numbers.
 
 ---
 
-### Why RSA Works
+### Core Idea
 
-- Easy → multiply primes  
-- Hard → factor large numbers  
+- Easy: Multiply large primes  
+- Hard: Factor large numbers  
 
-This one-way difficulty provides security.
+This asymmetry provides security.
 
 ---
 
-### Key Variables (Important for CTFs)
+### RSA Variables (Important for CTFs)
 
 | Variable | Meaning |
 |---------|--------|
@@ -120,12 +125,6 @@ This one-way difficulty provides security.
 
 ---
 
-### Encryption & Decryption
-
-c = m^e mod n m = c^d mod n
-
----
-
 ### Questions
 
 Knowing that p = 4391 and q = 6659. What is n?
@@ -133,6 +132,9 @@ Knowing that p = 4391 and q = 6659. What is n?
 **Answer:**
 
 29239669
+
+**Explanation:**  
+n is calculated as p × q.
 
 ---
 
@@ -142,36 +144,30 @@ Knowing that p = 4391 and q = 6659. What is ϕ(n)?
 
 29228620
 
+**Explanation:**  
+ϕ(n) = (p − 1)(q − 1), used in RSA key generation.
+
 ---
 
 ## Task 4: Diffie-Hellman Key Exchange
 
-Used to establish a shared secret over an insecure channel.
+Used to securely establish a shared secret over an insecure channel.
 
 ---
 
 ### Key Idea
 
-Two parties generate a **shared key without ever transmitting it directly**.
+- No prior shared key needed  
+- Both parties compute the **same secret independently**
 
 ---
 
 ### Process Summary
 
-1. Public values: p, g  
-2. Private keys: a, b  
-3. Public keys:  
-   - A = g^a mod p  
-   - B = g^b mod p  
-4. Shared secret:  
-   - A^b mod p = B^a mod p  
-
----
-
-### Security Insight
-
-- Prevents key exposure during transmission  
-- Commonly used in TLS handshakes  
+1. Agree on public values (p, g)  
+2. Choose private values (a, b)  
+3. Exchange computed public keys  
+4. Compute shared secret  
 
 ---
 
@@ -183,6 +179,9 @@ Consider p = 29, g = 5, a = 12. What is A?
 
 7
 
+**Explanation:**  
+A = g^a mod p.
+
 ---
 
 Consider p = 29, g = 5, b = 17. What is B?
@@ -191,21 +190,30 @@ Consider p = 29, g = 5, b = 17. What is B?
 
 9
 
+**Explanation:**  
+B = g^b mod p.
+
 ---
 
-Knowing that p = 29, a = 12, and you have B from the second question, what is the key calculated by Bob?
+Knowing that p = 29, a = 12, and you have B, what is the key calculated by Bob?
 
 **Answer:**
 
 24
 
+**Explanation:**  
+Shared key = B^a mod p.
+
 ---
 
-Knowing that p = 29, b = 17, and you have A from the first question, what is the key calculated by Alice?
+Knowing that p = 29, b = 17, and you have A, what is the key calculated by Alice?
 
 **Answer:**
 
 24
+
+**Explanation:**  
+Shared key = A^b mod p, both sides derive the same key.
 
 ---
 
@@ -215,87 +223,68 @@ SSH uses asymmetric cryptography for secure remote access.
 
 ---
 
-### Server Authentication
+### Key Concepts
 
-- Server presents public key  
-- Client verifies fingerprint  
-- Prevents MITM attacks  
-
----
-
-### Client Authentication
-
-Two methods:
-
-- Password-based (less secure)  
-- Key-based (preferred)  
+- Server authentication via public key fingerprint  
+- Client authentication via key pair  
+- Private key must remain secret  
 
 ---
 
-### Key Generation
+### Important Commands
 
 ssh-keygen -t ed25519
 
----
 
-### Key Files
 
-- Private key → must remain secret  
-- Public key → shared with server  
+ssh -i privateKey user@host
 
 ---
 
-### Security Notes
+### Security Insight
 
-- Private key ≈ password → never share  
-- Permissions must be restricted (`600`)  
-- Can be used for persistence/backdoors in CTFs  
+- Private keys = equivalent to passwords  
+- Permissions must be strict (600)  
+- Used heavily in real-world infra + CTFs  
 
 ---
 
 ### Question
 
-Check the SSH Private Key in ~/Public-Crypto-Basics/Task-5. What algorithm does the key use?
+What algorithm does the key use?
 
 **Answer:**
 
 RSA
 
+**Explanation:**  
+The key type identifies the algorithm used for encryption/authentication.
+
 ---
 
 ## Task 6: Digital Signatures and Certificates
 
-### Digital Signatures
-
-- Created using private key  
-- Verified using public key  
-
 ---
 
-### Key Idea
+### Digital Signatures
 
-- Ensures **authenticity + integrity**  
-- Often signs a **hash**, not raw data  
+- Created using **private key**
+- Verified using **public key**
+- Ensure:
+  - Integrity  
+  - Authenticity  
 
 ---
 
 ### Certificates
 
-Used to verify identity of servers (e.g., HTTPS).
+Used to verify identity (especially in HTTPS).
 
 ---
 
 ### Chain of Trust
 
-Server → Organization → Certificate Authority → Trusted Root CA
-
----
-
-### Real-World Use
-
-- HTTPS websites  
-- TLS encryption  
-- Browser trust model  
+Website → Organization → CA → Trusted by Browser
 
 ---
 
@@ -307,56 +296,66 @@ What does a remote web server use to prove itself to the client?
 
 Certificate
 
+**Explanation:**  
+Certificates verify server identity using trusted Certificate Authorities.
+
 ---
 
 ## Task 7: PGP and GPG
 
 PGP (Pretty Good Privacy) and GPG are used for:
 
-- File encryption  
-- Email security  
-- Digital signatures  
+- Encryption  
+- Digital signing  
+- Secure email communication  
 
 ---
 
-### Key Generation
+### Example Commands
 
 gpg --full-gen-key
 
----
 
-### Usage
 
-gpg --import backup.key gpg --decrypt confidential_message.gpg
+gpg --import backup.key
+
+
+
+gpg --decrypt confidential_message.gpg
 
 ---
 
 ### Key Insight
 
-- Public key → encrypt  
-- Private key → decrypt  
-- Private keys can be passphrase-protected  
+- Public key → shared  
+- Private key → secret  
+- Passphrase protects private key  
 
 ---
 
 ### Question
 
-Use GPG to decrypt the message in ~/Public-Crypto-Basics/Task-7. What secret word does the message hold?
+What secret word does the message hold?
 
 **Answer:**
 
 Pineapple
 
+**Explanation:**  
+Message decrypted using the private GPG key.
+
 ---
 
-## 🔹 Task 8: Conclusion
+## Task 8: Conclusion
+
+---
 
 ### Key Terms
 
 - **Cryptography** → Securing communication  
 - **Cryptanalysis** → Breaking cryptographic systems  
-- **Brute-force attack** → Try all possibilities  
-- **Dictionary attack** → Try likely passwords  
+- **Brute-force attack** → Trying all possibilities  
+- **Dictionary attack** → Using common word lists  
 
 ---
 
@@ -371,6 +370,10 @@ No answer needed
 
 # Reflection
 
-This room builds directly on basic cryptography and introduces real-world implementations of asymmetric encryption. Concepts like RSA, Diffie-Hellman, SSH authentication, and certificates are foundational to modern security protocols such as TLS and secure remote access.
+This room provides a strong foundation in asymmetric cryptography and its real-world applications. Concepts such as RSA, Diffie-Hellman, SSH authentication, and certificates are essential in modern cybersecurity.
 
-Understanding these mechanisms is essential for SOC analysts and DFIR workflows, where identifying encrypted traffic, verifying certificates, and analysing authentication mechanisms are common tasks.
+Understanding these mechanisms is critical for:
+- Analyzing secure network traffic  
+- Investigating authentication mechanisms  
+- Understanding TLS/HTTPS workflows  
+- Working in SOC and DFIR environments
