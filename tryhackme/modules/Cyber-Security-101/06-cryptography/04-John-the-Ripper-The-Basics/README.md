@@ -52,7 +52,7 @@ This room is highly relevant for **SOC/DFIR**, especially in:
 
 ---
 
-## 🔹 Task 1: Introduction
+## Task 1: Introduction
 
 **Objective:** Understand John the Ripper and its capabilities.
 
@@ -65,7 +65,7 @@ No answer needed
 
 ---
 
-## 🔹 Task 2: Basic Terms
+## Task 2: Basic Terms
 
 ### Key Idea
 
@@ -85,7 +85,7 @@ Jumbo version includes extended formats and tools like zip2john.
 
 ---
 
-## 🔹 Task 3: Setup & Wordlists
+## Task 3: Setup & Wordlists
 
 ### Important
 
@@ -102,7 +102,7 @@ rockyou.com
 
 ---
 
-## 🔹 Task 4: Cracking Basic Hashes
+## Task 4: Cracking Basic Hashes
 
 ### Key Syntax
 
@@ -148,7 +148,7 @@ Cracked passwords are stored in `john.pot`.
 
 ---
 
-## 🔹 Task 5: Windows Authentication Hashes (NTLM)
+## Task 5: Windows Authentication Hashes (NTLM)
 
 ### Key Concept
 
@@ -179,7 +179,7 @@ Loaded 1 password hash (NT) mushroom (?) Session completed
 
 ---
 
-## 🔹 Task 6: Cracking /etc/shadow Hashes
+## Task 6: Cracking /etc/shadow Hashes
 
 ### Key Concept
 
@@ -212,7 +212,7 @@ Loaded 1 password hash (sha512crypt) 1234 (root) Session completed
 
 ---
 
-## 🔹 Task 7: Single Crack Mode
+## Task 7: Single Crack Mode
 
 ### Key Concept
 
@@ -249,7 +249,7 @@ Jok3r
 
 ---
 
-## 🔹 Task 8: Custom Rules
+## Task 8: Custom Rules
 
 ### Key Idea
 
@@ -284,7 +284,7 @@ Flag to call rule?
 
 ---
 
-## 🔹 Task 9: Cracking ZIP Files
+## Task 9: Cracking ZIP Files
 
 ### Step 1: Extract hash
 
@@ -316,7 +316,7 @@ THM{w3ll_d0n3_h4sh_r0y4l}
 
 ---
 
-## 🔹 Task 10: Cracking RAR Files
+## Task 10: Cracking RAR Files
 
 ### Commands
 
@@ -336,7 +336,7 @@ THM{r4r_4rch1ve5_th15_t1m3}
 
 ---
 
-## 🔹 Task 11: Cracking SSH Keys
+## Task 11: Cracking SSH Keys
 
 ### Command
 
@@ -350,7 +350,7 @@ mango
 
 ---
 
-## 🔹 Task 12: Conclusion
+## Task 12: Conclusion
 
 Time for a new challenge!
 
