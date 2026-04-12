@@ -7,7 +7,7 @@
 
 ---
 
-# Summary
+## Summary
 
 This room builds upon basic cryptography concepts and focuses on **asymmetric (public key) cryptography**. It explains how public/private key pairs are used to enable secure communication, authentication, and integrity over insecure networks.
 
