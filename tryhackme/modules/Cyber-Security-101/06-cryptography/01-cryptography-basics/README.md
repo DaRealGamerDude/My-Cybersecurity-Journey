@@ -34,7 +34,7 @@ Understanding these concepts is essential for cybersecurity roles, as cryptograp
 
 ---
 
-## 🔹 Task 1: Introduction
+## Task 1: Introduction
 
 **Objective:**  
 Understand the purpose of cryptography and what this room will cover.
@@ -52,7 +52,7 @@ No answer needed
 
 ---
 
-## 🔹 Task 2: Importance of Cryptography
+## Task 2: Importance of Cryptography
 
 Cryptography ensures:
 
@@ -81,7 +81,7 @@ PCI DSS enforces security standards for storing and transmitting credit card dat
 
 ---
 
-## 🔹 Task 3: Plaintext to Ciphertext
+## Task 3: Plaintext to Ciphertext
 
 Core cryptographic flow:
 
@@ -116,7 +116,7 @@ decryption
 
 ---
 
-## 🔹 Task 4: Historical Ciphers
+## Task 4: Historical Ciphers
 
 ### Caesar Cipher
 
@@ -147,7 +147,7 @@ ICANENCRYPT
 
 ---
 
-## 🔹 Task 5: Types of Encryption
+## Task 5: Types of Encryption
 
 ### Symmetric Encryption
 
@@ -202,7 +202,7 @@ When was AES adopted as an encryption standard?
 
 ---
 
-## 🔹 Task 6: Basic Math
+## Task 6: Basic Math
 
 ### XOR Operation
 
@@ -280,7 +280,7 @@ What’s 60%12?
 
 ---
 
-## 🔹 Task 7: Summary
+## Task 7: Summary
 
 This room introduced:
 
