@@ -7,7 +7,7 @@
 
 ---
 
-## Executive Summary
+## Summary
 
 This write-up documents my investigation of the *Have a Break* CTF on TryHackMe, a scenario simulating a real-world cargo theft case involving insider involvement.
 
