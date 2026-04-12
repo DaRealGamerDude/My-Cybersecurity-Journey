@@ -5,6 +5,10 @@
 This repository documents my cybersecurity learning journey with a focus on defensive security, SOC workflows, and incident response. Below is a structured index to navigate the content efficiently.
 
 ### 📄 Featured Writeups
+- **Have a Break (KitKat Heist) — DFIR & OSINT Investigation**  
+  Multi-source investigation involving email forensics, log analysis, insider threat detection, and OSINT pivoting to uncover attacker identity.  
+  → [`writeups/have-a-break-ctf`](writeups/have-a-break-ctf)
+
 - **First Shift CTF — SOC Investigation (First CTF Attempt)**  
   Hands-on SOC-style investigation covering alert triage, infrastructure analysis, and malware context.  
   → [`writeups/first-shift-ctf`](writeups/first-shift-ctf)
