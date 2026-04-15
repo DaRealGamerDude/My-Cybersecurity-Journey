@@ -1,4 +1,4 @@
-# Web Hacking — Module Overview
+# Web Hacking (Module 08)
 
 This module builds foundational knowledge of **web application security**, covering how web apps function, how client-side and backend logic works, and how attackers exploit weaknesses using real tools like Burp Suite.
 
