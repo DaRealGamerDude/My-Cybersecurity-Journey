@@ -354,8 +354,6 @@ Capability: schedule task via schtasks
 
 ---
 
----
-
 ## Task 7: Deep Analysis (-vv + JSON)
 
 ---
@@ -366,7 +364,6 @@ Capability: schedule task via schtasks
 capa -j -vv .\cryptbot.bin > cryptbot_vv.json
 ```
 
----
 
 ### Tool
 
