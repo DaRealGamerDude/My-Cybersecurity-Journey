@@ -400,7 +400,6 @@ string: //create /i
 
 ---
 
----
 
 ## Task 8: Conclusion
 
