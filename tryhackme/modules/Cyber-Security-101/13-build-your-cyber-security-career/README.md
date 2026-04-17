@@ -8,9 +8,9 @@ This module establishes the **theoretical foundation of cybersecurity** and conn
 
 | Room | Focus |
 |------|------|
-| [Security Principles](./01-Security-Principles/README.md) | Core security models & concepts |
-| [Careers in Cyber](./02-Careers-in-Cyber/README.md) | Industry roles & responsibilities |
-| [Training Impact on Teams](./03-Training-Impact-on-Teams/README.md) | Organizational security maturity |
+| Security Principles | Core security models & concepts |
+| Careers in Cyber | Industry roles & responsibilities |
+| Training Impact on Teams | Organizational security maturity |
 
 ---
 
