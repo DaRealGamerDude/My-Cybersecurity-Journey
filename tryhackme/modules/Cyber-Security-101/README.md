@@ -212,7 +212,7 @@ This journey is built around:
 
 This pathway is intentionally aligned with:
 
-**SOC Analyst (Tier 1 / Tier 2)**  
-**Threat Detection & Monitoring**  
-**Digital Forensics & Incident Response (DFIR)**  
+- **SOC Analyst (Tier 1 / Tier 2)**  
+- **Threat Detection & Monitoring**  
+- **Digital Forensics & Incident Response (DFIR)**  
 ---
