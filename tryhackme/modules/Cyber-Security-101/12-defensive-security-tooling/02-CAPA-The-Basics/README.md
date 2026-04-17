@@ -161,11 +161,11 @@ Get-Content .\cryptbot.txt
 
 Example:
 
-````
+
 
 Defense Evasion → Obfuscated Files → T1027
 
-```
+
 
 ---
 
@@ -384,12 +384,10 @@ capa -j -vv .\cryptbot.bin > cryptbot_vv.json
 
 ### Example Detection Logic
 
-````
 
 string: /schtasks/i
 string: //create /i
 
-```
 
 ---
 
