@@ -22,7 +22,7 @@ Through this investigation, I:
 
 This CTF felt significantly closer to real investigative work compared to my previous experiences and highlighted both my strengths in structured analysis and my tendency to initially overlook secondary pivots.
 
-<img width="1600" height="684" alt="image" src="ADD_SCREENSHOT_ROOM_OVERVIEW_HERE" />
+<img width="1721" height="737" alt="image" src="https://github.com/user-attachments/assets/1ecd04c5-1e41-47bc-bc4e-7ad19806fc28" />
 
 ---
 
